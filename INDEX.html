@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	</head>
+
+	<body>
+		<h1> Site portfolio de Caleb </h1>
+		
+		<p id="frase1">Por favor clique no botão abaixo:</p>
+		<button type="button" onclick="FuncaoBotao1()">Clique em mim!</button>
+		<p></p>
+		<p id="frase2"> </p>
+		<p></p>
+		<p>O botão abaixo abrirá uma caixa de dialogo. Por favor clique no botão abaixo:</p>
+		<button type="button" onclick="window.alert('Surpresa! Obrigado por clicar.')" >Clique em mim! Part2</button>	
+		<p></p>
+		<p>Para este ultimo experimento, clique no botão abaixo para destruir esta página. </p>
+		<button type="button" onclick="PageDeleter()" >Não clique em mim!</button>
+		
+			<script>
+			/*Função para o botão 1*/
+			function FuncaoBotao1()
+			{
+			document.getElementById("frase1").innerHTML = "Obrigado por clicar!";
+			}
+			// FIM
+			
+			/*Escreve na frase 2*/
+			document.getElementById("frase2").innerHTML ="Esta frase foi escrita usando Javascript";
+			// FIM
+			
+			/*função para o 2o botão*/
+			function PageDeleter()
+			{
+			document.write("Caboom! A página foi destruida. Obrigado por clicar!");
+			}
+			// FIM
+			
+			</script>
+	</body>
+</html>	
